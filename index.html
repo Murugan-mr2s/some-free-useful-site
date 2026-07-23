@@ -1,7 +1,370 @@
-<html>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Web Utilities & Developer Tools | Client-Side Privacy Hub</title>
+  <meta name="description" content="A suite of 100% client-side web tools including PDF redaction, PDF editing, code playgrounds, financial calculators, and image utilities. Fast, free, and private.">
+  <meta name="keywords" content="free web tools, client-side PDF tools, PDF redact, PDF edit, JSON viewer, JavaScript editor, Python online, financial calculators, QR code generator, blur image">
+  <link rel="canonical" href="https://murugan-mr2s.github.io/some-useful-free-site/">
+  
+  <!-- OpenGraph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://murugan-mr2s.github.io/some-useful-free-site/">
+  <meta property="og:title" content="Free Web Utilities Hub | 100% Client-Side Tools">
+  <meta property="og:description" content="Explore 13 free, browser-based tools for document editing, coding, financial calculations, and image processing with zero file uploads.">
+  
+  <!-- Fonts & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 
-<h1> Senaskat.com </h1>    
-  </body></body>
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Senaskat Free Web Utilities Hub",
+    "url": "https://murugan-mr2s.github.io/some-useful-free-site/",
+    "description": "Collection of 100% client-side free web utilities including PDF tools, code editors, financial calculators, and image tools."
+  }
+  </script>
+</head>
+<body>
+  <div class="bg-glow"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-content">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">Senaskat</span>
+        <span>Useful Free Site</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#tools">All Tools</a></li>
+          <li><a href="#pdf">PDF Tools</a></li>
+          <li><a href="#developer">Dev Editors</a></li>
+          <li><a href="#financial">Calculators</a></li>
+          <li><a href="https://senaskat.com" target="_blank" rel="noopener">Main Site ↗</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-tag">⚡ 100% Client-Side Privacy • Zero Server Uploads</div>
+      <h1>Free Web Utilities & Developer Tools</h1>
+      <p>Fast, private, and powerful browser-based tools designed for privacy-conscious developers, professionals, and students.</p>
+
+      <div class="controls-bar">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search 13 free tools (e.g. PDF, JSON, Python, POS...)" onkeyup="filterTools()">
+        </div>
+        <div class="category-filters">
+          <button class="filter-btn active" onclick="setCategory('all', this)">All Utilities (13)</button>
+          <button class="filter-btn" onclick="setCategory('pdf', this)">🔒 PDF & Docs</button>
+          <button class="filter-btn" onclick="setCategory('developer', this)">💻 Dev & Code</button>
+          <button class="filter-btn" onclick="setCategory('financial', this)">📈 Financial</button>
+          <button class="filter-btn" onclick="setCategory('utilities', this)">🛠️ Smart Utilities</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Tools Grid -->
+  <main class="container" id="tools">
+    <div class="tools-grid" id="toolsGrid">
+      
+      <!-- PDF Redact -->
+      <a href="pdf-redact.html" class="tool-card" data-category="pdf" data-title="pdf redact text black out sensitive document privacy">
+        <div class="card-header">
+          <div class="tool-icon">🛡️</div>
+          <div class="tool-info">
+            <h3>PDF Redact</h3>
+            <div class="category-tag">PDF & Document</div>
+          </div>
+        </div>
+        <p>Permanently black out text and sensitive data directly in your browser with zero file upload.</p>
+        <div class="card-footer">
+          <span class="privacy-badge">🔒 100% Private</span>
+          <span class="card-link-text">Learn More →</span>
+        </div>
+      </a>
+
+      <!-- PDF Edit -->
+      <a href="pdf-edit.html" class="tool-card" data-category="pdf" data-title="pdf edit text annotate write draw signatures document">
+        <div class="card-header">
+          <div class="tool-icon">📝</div>
+          <div class="tool-info">
+            <h3>PDF Edit</h3>
+            <div class="category-tag">PDF & Document</div>
+          </div>
+        </div>
+        <p>Edit PDF text, add annotations, insert shapes, and sign documents securely client-side.</p>
+        <div class="card-footer">
+          <span class="privacy-badge">🔒 Zero Upload</span>
+          <span class="card-link-text">Learn More →</span>
+        </div>
+      </a>
+
+      <!-- PDF Merge & Split -->
+      <a href="pdf-merge-split.html" class="tool-card" data-category="pdf" data-title="pdf merge split combine divide pages organize">
+        <div class="card-header">
+          <div class="tool-icon">🔀</div>
+          <div class="tool-info">
+            <h3>PDF Merge & Split</h3>
+            <div class="category-tag">PDF & Document</div>
+          </div>
+        </div>
+        <p>Combine multiple PDF files or extract specific page ranges effortlessly without installation.</p>
+        <div class="card-footer">
+          <span class="privacy-badge">🔒 Fast & Secure</span>
+          <span class="card-link-text">Learn More →</span>
+        </div>
+      </a>
+
+      <!-- PDF Extract -->
+      <a href="pdf-extract.html" class="tool-card" data-category="pdf" data-title="pdf extract text images tables data converter">
+        <div class="card-header">
+          <div class="tool-icon">📤</div>
+          <div class="tool-info">
+            <h3>PDF Extract</h3>
+            <div class="category-tag">PDF & Document</div>
+          </div>
+        </div>
+        <p>Extract embedded images, text content, and tabular data from PDF documents instantly.</p>
+        <div class="card-footer">
+          <span class="privacy-badge">🔒 Browser Native</span>
+          <span class="card-link-text">Learn More →</span>
+        </div>
+      </a>
+
+      <!-- LockPDF -->
+      <a href="lock-pdf.html" class="tool-card" data-category="pdf" data-title="lock pdf password protect encrypt watermark unlock security">
+        <div class="card-header">
+          <div class="tool-icon">🔐</div>
+          <div class="tool-info">
+            <h3>LockPDF</h3>
+            <div class="category-tag">PDF & Document</div>
+          </div>
+        </div>
+        <p>Add AES password encryption, custom watermarks, or remove protections securely in-browser.</p>
+        <div class="card-footer">
+          <span class="privacy-badge">🔒 AES Encrypted</span>
+          <span class="card-link-text">Learn More →</span>
+        </div>
+      </a>
+
+      <!-- ProQuiz -->
+      <a href="proquiz.html" class="tool-card" data-category="developer" data-title="proquiz coding quiz programming java python javascript html css interactive">
+        <div class="card-header">
+          <div class="tool-icon">🎯</div>
+          <div class="tool-info">
+            <h3>ProQuiz</h3>
+            <div class="category-tag">Developer & Code</div>
+          </div>
+        </div>
+        <p>Test and sharpen your programming skills with interactive quizzes in JS, Python, SQL, and HTML.</p>
+        <div class="card-footer">
+          <span class="privacy-badge">🎓 Free Practice</span>
+          <span class="card-link-text">Learn More →</span>
+        </div>
+      </a>
+
+      <!-- JSON Viewer -->
+      <a href="json-viewer.html" class="tool-card" data-category="developer" data-title="json viewer formatter validator tree view beautify debug">
+        <div class="card-header">
+          <div class="tool-icon">🔍</div>
+          <div class="tool-info">
+            <h3>JSON Viewer</h3>
+            <div class="category-tag">Developer & Code</div>
+          </div>
+        </div>
+        <p>Format, validate, beautify, and inspect complex JSON data trees with syntax highlighting.</p>
+        <div class="card-footer">
+          <span class="privacy-badge">⚡ Instant Validation</span>
+          <span class="card-link-text">Learn More →</span>
+        </div>
+      </a>
+
+      <!-- JS Editor -->
+      <a href="js-editor.html" class="tool-card" data-category="developer" data-title="js editor javascript playground run code live preview script console">
+        <div class="card-header">
+          <div class="tool-icon">⚡</div>
+          <div class="tool-info">
+            <h3>JS Editor</h3>
+            <div class="category-tag">Developer & Code</div>
+          </div>
+        </div>
+        <p>Beginner-friendly browser JavaScript playground to test snippets with real-time output console.</p>
+        <div class="card-footer">
+          <span class="privacy-badge">💻 Live Execution</span>
+          <span class="card-link-text">Learn More →</span>
+        </div>
+      </a>
+
+      <!-- Python Editor -->
+      <a href="python-editor.html" class="tool-card" data-category="developer" data-title="python editor pyodide client side script runner learning beginner playground">
+        <div class="card-header">
+          <div class="tool-icon">🐍</div>
+          <div class="tool-info">
+            <h3>Python Editor</h3>
+            <div class="category-tag">Developer & Code</div>
+          </div>
+        </div>
+        <p>Execute Python scripts in your browser without installing Python or setting up servers.</p>
+        <div class="card-footer">
+          <span class="privacy-badge">🐍 Browser Python</span>
+          <span class="card-link-text">Learn More →</span>
+        </div>
+      </a>
+
+      <!-- POS Calculator -->
+      <a href="pos-calculator.html" class="tool-card" data-category="financial" data-title="pos calculator post office savings compounding interest mis td nsc maturity returns india">
+        <div class="card-header">
+          <div class="tool-icon">📊</div>
+          <div class="tool-info">
+            <h3>POS Calculator</h3>
+            <div class="category-tag">Financial</div>
+          </div>
+        </div>
+        <p>Estimate Indian Post Office savings schemes, Time Deposits, and Monthly Income Scheme maturity returns.</p>
+        <div class="card-footer">
+          <span class="privacy-badge">📈 Accurate Interest</span>
+          <span class="card-link-text">Learn More →</span>
+        </div>
+      </a>
+
+      <!-- WPC Calculator -->
+      <a href="wpc-calculator.html" class="tool-card" data-category="financial" data-title="wpc calculator sip wealth loan emi compound interest mutual funds finance">
+        <div class="card-header">
+          <div class="tool-icon">💡</div>
+          <div class="tool-info">
+            <h3>WPC Calculator</h3>
+            <div class="category-tag">Financial</div>
+          </div>
+        </div>
+        <p>SIP wealth growth projector and home/car loan EMI interest estimator with visual charts.</p>
+        <div class="card-footer">
+          <span class="privacy-badge">💰 Wealth Estimator</span>
+          <span class="card-link-text">Learn More →</span>
+        </div>
+      </a>
+
+      <!-- Blur Image -->
+      <a href="blur-image.html" class="tool-card" data-category="utilities" data-title="blur image face blur redact photo privacy editor ai detection photo">
+        <div class="card-header">
+          <div class="tool-icon">👁️</div>
+          <div class="tool-info">
+            <h3>Blur Image</h3>
+            <div class="category-tag">Smart Utilities</div>
+          </div>
+        </div>
+        <p>Blur faces and sensitive photo regions manually or automatically using client-side AI image processing.</p>
+        <div class="card-footer">
+          <span class="privacy-badge">🔒 Local Processing</span>
+          <span class="card-link-text">Learn More →</span>
+        </div>
+      </a>
+
+      <!-- Make QR Code -->
+      <a href="make-qr-code.html" class="tool-card" data-category="utilities" data-title="make qr code generator wifi sms text url download svg png custom color">
+        <div class="card-header">
+          <div class="tool-icon">📱</div>
+          <div class="tool-info">
+            <h3>Make QR Code</h3>
+            <div class="category-tag">Smart Utilities</div>
+          </div>
+        </div>
+        <p>Generate customizable QR codes for URLs, Wi-Fi passwords, contact cards, and text in high resolution.</p>
+        <div class="card-footer">
+          <span class="privacy-badge">📱 High Quality</span>
+          <span class="card-link-text">Learn More →</span>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-badge">Senaskat</span>
+          <span>Useful Free Site</span>
+        </a>
+        <p>Free, privacy-focused browser utilities designed for maximum speed, zero server uploads, and simplicity.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>🔒 PDF Tools</h4>
+        <ul class="footer-links">
+          <li><a href="pdf-redact.html">PDF Redact</a></li>
+          <li><a href="pdf-edit.html">PDF Edit</a></li>
+          <li><a href="pdf-merge-split.html">PDF Merge & Split</a></li>
+          <li><a href="pdf-extract.html">PDF Extract</a></li>
+          <li><a href="lock-pdf.html">LockPDF</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>💻 Developer Tools</h4>
+        <ul class="footer-links">
+          <li><a href="proquiz.html">ProQuiz</a></li>
+          <li><a href="json-viewer.html">JSON Viewer</a></li>
+          <li><a href="js-editor.html">JS Editor</a></li>
+          <li><a href="python-editor.html">Python Editor</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>📈 Financial & Utilities</h4>
+        <ul class="footer-links">
+          <li><a href="pos-calculator.html">POS Calculator</a></li>
+          <li><a href="wpc-calculator.html">WPC Calculator</a></li>
+          <li><a href="blur-image.html">Blur Image</a></li>
+          <li><a href="make-qr-code.html">Make QR Code</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Senaskat Web Utilities. All tools run 100% locally in your browser.</p>
+    </div>
+  </footer>
+
+  <script>
+    let currentCategory = 'all';
+
+    function setCategory(category, btn) {
+      currentCategory = category;
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      filterTools();
+    }
+
+    function filterTools() {
+      const search = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.tool-card');
+
+      cards.forEach(card => {
+        const catMatch = currentCategory === 'all' || card.getAttribute('data-category') === currentCategory;
+        const textMatch = card.getAttribute('data-title').toLowerCase().includes(search) || 
+                          card.innerText.toLowerCase().includes(search);
+
+        if (catMatch && textMatch) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
 </html>
-
