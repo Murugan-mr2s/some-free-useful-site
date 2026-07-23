@@ -9,7 +9,7 @@ This repository hosts a suite of 13 static web utilities optimized for speed, pr
 ### 🔒 PDF & Document Tools (100% Client-Side Privacy)
 * **[PDF Redact](https://pdfredact.senaskat.com)** ([Landing Page](pdf-redact.html)) - Secure text and sensitivity redaction.
 * **[PDF Edit](https://pdfedit.senaskat.com)** ([Landing Page](pdf-edit.html)) - Zero-upload online document editing & signatures.
-* **[PDF Merge & Split](https://pdfmerge.senaskat.com)** ([Landing Page](pdf-merge-split.html)) - Fast page reordering and splitting utilities.
+* **[PDF Merge & Split](https://pdfms.senaskat.com)** ([Landing Page](pdf-merge-split.html)) - Fast page reordering and splitting utilities.
 * **[PDF Extract](https://pdfextract.senaskat.com)** ([Landing Page](pdf-extract.html)) - Table, text, and image extraction.
 * **[LockPDF](https://lockpdf.senaskat.com)** ([Landing Page](lock-pdf.html)) - AES password encryption, watermarks, and security.
 
