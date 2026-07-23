@@ -15,14 +15,14 @@ This repository hosts a suite of 13 static web utilities optimized for speed, pr
 
 ### 💻 Developer Tools & Code Editors
 * **[ProQuiz](https://spt.senaskat.com)** ([Landing Page](proquiz.html)) - Coding language quizzes and interview practice.
-* **[JSON Viewer](https://jsonviewer.senaskat.com)** ([Landing Page](json-viewer.html)) - JSON formatting, validation, and tree visualization.
+* **[JSON Viewer](https://jsonview.senaskat.com)** ([Landing Page](json-viewer.html)) - JSON formatting, validation, and tree visualization.
 * **[JS Editor](https://jseditor.senaskat.com)** ([Landing Page](js-editor.html)) - Live interactive JavaScript playground.
-* **[Python Editor](https://pythoneditor.senaskat.com)** ([Landing Page](python-editor.html)) - Client-side Python code runner in WebAssembly.
+* **[Python Editor](https://pyeditor.senaskat.com)** ([Landing Page](python-editor.html)) - Client-side Python code runner in WebAssembly.
 
 ### 📈 Financial Calculators
-* **[POS Calculator](https://poscalculator.senaskat.com)** ([Landing Page](pos-calculator.html)) - Indian Post Office savings maturity returns.
-* **[WPC Calculator](https://wpccalculator.senaskat.com)** ([Landing Page](wpc-calculator.html)) - SIP compound wealth & Loan EMI estimations.
+* **[POS Calculator](https://pos.senaskat.com)** ([Landing Page](pos-calculator.html)) - Indian Post Office savings maturity returns.
+* **[WPC Calculator](https://wpc.senaskat.com)** ([Landing Page](wpc-calculator.html)) - SIP compound wealth & Loan EMI estimations.
 
 ### 🛠️ Smart Utilities
 * **[Blur Image](https://blurimage.senaskat.com)** ([Landing Page](blur-image.html)) - Manual and AI face blurring photo editor.
-* **[Make QR Code](https://makeqrcode.senaskat.com)** ([Landing Page](make-qr-code.html)) - Custom QR code generator for URLs, Wi-Fi, and text.
+* **[Make QR Code](https://makeqr.senaskat.com)** ([Landing Page](make-qr-code.html)) - Custom QR code generator for URLs, Wi-Fi, and text.
