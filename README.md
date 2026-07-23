@@ -14,7 +14,7 @@ This repository hosts a suite of 13 static web utilities optimized for speed, pr
 * **[LockPDF](https://lockpdf.senaskat.com)** ([Landing Page](lock-pdf.html)) - AES password encryption, watermarks, and security.
 
 ### 💻 Developer Tools & Code Editors
-* **[ProQuiz](https://proquiz.senaskat.com)** ([Landing Page](proquiz.html)) - Coding language quizzes and interview practice.
+* **[ProQuiz](https://spt.senaskat.com)** ([Landing Page](proquiz.html)) - Coding language quizzes and interview practice.
 * **[JSON Viewer](https://jsonviewer.senaskat.com)** ([Landing Page](json-viewer.html)) - JSON formatting, validation, and tree visualization.
 * **[JS Editor](https://jseditor.senaskat.com)** ([Landing Page](js-editor.html)) - Live interactive JavaScript playground.
 * **[Python Editor](https://pythoneditor.senaskat.com)** ([Landing Page](python-editor.html)) - Client-side Python code runner in WebAssembly.
