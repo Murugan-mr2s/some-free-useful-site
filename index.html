@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free Web Utilities & Developer Tools | Client-Side Privacy Hub</title>
-  <meta name="description" content="A suite of 100% client-side web tools including PDF redaction, PDF editing, code playgrounds, financial calculators, and image utilities. Fast, free, and private.">
+  <title>Free Web Utilities & Developer Tools Hub | 100% Client-Side Privacy</title>
+  <meta name="description" content="Explore 13 free browser-based web tools: PDF redaction, PDF editing, JSON viewer, Python editor, financial calculators, QR code generator, and image blur. 100% client-side privacy.">
   <meta name="keywords" content="free web tools, client-side PDF tools, PDF redact, PDF edit, JSON viewer, JavaScript editor, Python online, financial calculators, QR code generator, blur image">
   <link rel="canonical" href="https://murugan-mr2s.github.io/some-useful-free-site/">
   
@@ -12,8 +12,13 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://murugan-mr2s.github.io/some-useful-free-site/">
   <meta property="og:title" content="Free Web Utilities Hub | 100% Client-Side Tools">
-  <meta property="og:description" content="Explore 13 free, browser-based tools for document editing, coding, financial calculations, and image processing with zero file uploads.">
+  <meta property="og:description" content="13 free, browser-based utilities for document editing, coding, financial calculations, and image processing with zero file uploads.">
   
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Web Utilities Hub | 100% Client-Side Privacy">
+  <meta name="twitter:description" content="Explore 13 free, browser-based web tools with zero server file uploads.">
+
   <!-- Fonts & Stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,45 +32,51 @@
     "@type": "WebSite",
     "name": "Senaskat Free Web Utilities Hub",
     "url": "https://murugan-mr2s.github.io/some-useful-free-site/",
-    "description": "Collection of 100% client-side free web utilities including PDF tools, code editors, financial calculators, and image tools."
+    "description": "Collection of 100% client-side free web utilities including PDF tools, code editors, financial calculators, and image tools.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Senaskat Web Utilities",
+      "url": "https://senaskat.com"
+    }
   }
   </script>
 </head>
 <body>
   <div class="bg-glow"></div>
 
-  <!-- Header -->
+  <!-- Header Navigation -->
   <header>
     <div class="container nav-content">
-      <a href="index.html" class="logo">
+      <a href="index.html" class="logo" title="Senaskat Useful Free Site Portal">
         <span class="logo-badge">Senaskat</span>
         <span>Useful Free Site</span>
       </a>
-      <nav>
+      <nav aria-label="Main Navigation">
         <ul class="nav-links">
-          <li><a href="#tools">All Tools</a></li>
-          <li><a href="#pdf">PDF Tools</a></li>
-          <li><a href="#developer">Dev Editors</a></li>
-          <li><a href="#financial">Calculators</a></li>
-          <li><a href="https://senaskat.com" target="_blank" rel="noopener">Main Site ↗</a></li>
+          <li><a href="#pdf-tools">PDF Tools</a></li>
+          <li><a href="#dev-tools">Dev Editors</a></li>
+          <li><a href="#finance-tools">Financial</a></li>
+          <li><a href="#utility-tools">Utilities</a></li>
+          <li><a href="#faq-section">FAQ</a></li>
+          <li><a href="https://senaskat.com" target="_blank" rel="noopener" title="Main Senaskat Website">Senaskat.com ↗</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Main Hero Section -->
   <section class="hero">
     <div class="container">
       <div class="hero-tag">⚡ 100% Client-Side Privacy • Zero Server Uploads</div>
-      <h1>Free Web Utilities & Developer Tools</h1>
-      <p>Fast, private, and powerful browser-based tools designed for privacy-conscious developers, professionals, and students.</p>
+      <h1 id="main-heading">Free Web Utilities & Developer Tools Hub</h1>
+      <p>Fast, private, and powerful browser-based tools designed for privacy-conscious developers, professionals, and students. All processing occurs locally on your device.</p>
 
       <div class="controls-bar">
         <div class="search-box">
           <span class="search-icon">🔍</span>
-          <input type="text" id="searchInput" placeholder="Search 13 free tools (e.g. PDF, JSON, Python, POS...)" onkeyup="filterTools()">
+          <input type="text" id="searchInput" placeholder="Search 13 free tools (e.g. PDF, JSON, Python, POS...)" onkeyup="filterTools()" aria-label="Search tools">
         </div>
-        <div class="category-filters">
+        <div class="category-filters" aria-label="Filter by category">
           <button class="filter-btn active" onclick="setCategory('all', this)">All Utilities (13)</button>
           <button class="filter-btn" onclick="setCategory('pdf', this)">🔒 PDF & Docs</button>
           <button class="filter-btn" onclick="setCategory('developer', this)">💻 Dev & Code</button>
@@ -76,222 +87,350 @@
     </div>
   </section>
 
-  <!-- Main Tools Grid -->
-  <main class="container" id="tools">
-    <div class="tools-grid" id="toolsGrid">
-      
-      <!-- PDF Redact -->
-      <a href="pdf-redact.html" class="tool-card" data-category="pdf" data-title="pdf redact text black out sensitive document privacy">
-        <div class="card-header">
-          <div class="tool-icon">🛡️</div>
-          <div class="tool-info">
-            <h3>PDF Redact</h3>
-            <div class="category-tag">PDF & Document</div>
-          </div>
-        </div>
-        <p>Permanently black out text and sensitive data directly in your browser with zero file upload.</p>
-        <div class="card-footer">
-          <span class="privacy-badge">🔒 100% Private</span>
-          <span class="card-link-text">Learn More →</span>
-        </div>
-      </a>
+  <!-- Main Content Container -->
+  <main class="container">
 
-      <!-- PDF Edit -->
-      <a href="pdf-edit.html" class="tool-card" data-category="pdf" data-title="pdf edit text annotate write draw signatures document">
-        <div class="card-header">
-          <div class="tool-icon">📝</div>
-          <div class="tool-info">
-            <h3>PDF Edit</h3>
-            <div class="category-tag">PDF & Document</div>
-          </div>
-        </div>
-        <p>Edit PDF text, add annotations, insert shapes, and sign documents securely client-side.</p>
-        <div class="card-footer">
-          <span class="privacy-badge">🔒 Zero Upload</span>
-          <span class="card-link-text">Learn More →</span>
-        </div>
-      </a>
+    <!-- PDF & Document Tools Section -->
+    <section id="pdf-tools" style="margin-bottom: 3.5rem;">
+      <div style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
+        <h2 style="font-size: 1.75rem; font-weight: 800; color: var(--text-main);">🔒 PDF & Document Tools (100% Client-Side Privacy)</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Securely edit, redact, split, merge, and protect PDF files directly inside your browser memory.</p>
+      </div>
 
-      <!-- PDF Merge & Split -->
-      <a href="pdf-merge-split.html" class="tool-card" data-category="pdf" data-title="pdf merge split combine divide pages organize">
-        <div class="card-header">
-          <div class="tool-icon">🔀</div>
-          <div class="tool-info">
-            <h3>PDF Merge & Split</h3>
-            <div class="category-tag">PDF & Document</div>
+      <div class="tools-grid">
+        
+        <!-- PDF Redact -->
+        <article class="tool-card" data-category="pdf" data-title="pdf redact text black out sensitive document privacy">
+          <div class="card-header">
+            <div class="tool-icon">🛡️</div>
+            <div class="tool-info">
+              <h3>PDF Redact</h3>
+              <div class="category-tag">PDF & Document</div>
+            </div>
           </div>
-        </div>
-        <p>Combine multiple PDF files or extract specific page ranges effortlessly without installation.</p>
-        <div class="card-footer">
-          <span class="privacy-badge">🔒 Fast & Secure</span>
-          <span class="card-link-text">Learn More →</span>
-        </div>
-      </a>
-
-      <!-- PDF Extract -->
-      <a href="pdf-extract.html" class="tool-card" data-category="pdf" data-title="pdf extract text images tables data converter">
-        <div class="card-header">
-          <div class="tool-icon">📤</div>
-          <div class="tool-info">
-            <h3>PDF Extract</h3>
-            <div class="category-tag">PDF & Document</div>
+          <p>Permanently black out text and sensitive data directly in your browser with zero file upload.</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap;">
+            <a href="pdf-redact.html" class="card-link-text" style="font-size: 0.85rem;">Read Guide →</a>
+            <a href="https://pdfredact.senaskat.com" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Launch Web App ↗</a>
           </div>
-        </div>
-        <p>Extract embedded images, text content, and tabular data from PDF documents instantly.</p>
-        <div class="card-footer">
-          <span class="privacy-badge">🔒 Browser Native</span>
-          <span class="card-link-text">Learn More →</span>
-        </div>
-      </a>
-
-      <!-- LockPDF -->
-      <a href="lock-pdf.html" class="tool-card" data-category="pdf" data-title="lock pdf password protect encrypt watermark unlock security">
-        <div class="card-header">
-          <div class="tool-icon">🔐</div>
-          <div class="tool-info">
-            <h3>LockPDF</h3>
-            <div class="category-tag">PDF & Document</div>
+          <div class="card-footer">
+            <span class="privacy-badge">🔒 100% Private</span>
+            <a href="https://pdfredact.senaskat.com" target="_blank" rel="noopener" style="color: var(--text-subtle); font-size: 0.75rem; text-decoration: none;">pdfredact.senaskat.com ↗</a>
           </div>
-        </div>
-        <p>Add AES password encryption, custom watermarks, or remove protections securely in-browser.</p>
-        <div class="card-footer">
-          <span class="privacy-badge">🔒 AES Encrypted</span>
-          <span class="card-link-text">Learn More →</span>
-        </div>
-      </a>
+        </article>
 
-      <!-- ProQuiz -->
-      <a href="proquiz.html" class="tool-card" data-category="developer" data-title="proquiz coding quiz programming java python javascript html css interactive">
-        <div class="card-header">
-          <div class="tool-icon">🎯</div>
-          <div class="tool-info">
-            <h3>ProQuiz</h3>
-            <div class="category-tag">Developer & Code</div>
+        <!-- PDF Edit -->
+        <article class="tool-card" data-category="pdf" data-title="pdf edit text annotate write draw signatures document">
+          <div class="card-header">
+            <div class="tool-icon">📝</div>
+            <div class="tool-info">
+              <h3>PDF Edit</h3>
+              <div class="category-tag">PDF & Document</div>
+            </div>
           </div>
-        </div>
-        <p>Test and sharpen your programming skills with interactive quizzes in JS, Python, SQL, and HTML.</p>
-        <div class="card-footer">
-          <span class="privacy-badge">🎓 Free Practice</span>
-          <span class="card-link-text">Learn More →</span>
-        </div>
-      </a>
-
-      <!-- JSON Viewer -->
-      <a href="json-viewer.html" class="tool-card" data-category="developer" data-title="json viewer formatter validator tree view beautify debug">
-        <div class="card-header">
-          <div class="tool-icon">🔍</div>
-          <div class="tool-info">
-            <h3>JSON Viewer</h3>
-            <div class="category-tag">Developer & Code</div>
+          <p>Edit PDF text, add annotations, insert shapes, and sign documents securely client-side.</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap;">
+            <a href="pdf-edit.html" class="card-link-text" style="font-size: 0.85rem;">Read Guide →</a>
+            <a href="https://pdfedit.senaskat.com" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Launch Web App ↗</a>
           </div>
-        </div>
-        <p>Format, validate, beautify, and inspect complex JSON data trees with syntax highlighting.</p>
-        <div class="card-footer">
-          <span class="privacy-badge">⚡ Instant Validation</span>
-          <span class="card-link-text">Learn More →</span>
-        </div>
-      </a>
-
-      <!-- JS Editor -->
-      <a href="js-editor.html" class="tool-card" data-category="developer" data-title="js editor javascript playground run code live preview script console">
-        <div class="card-header">
-          <div class="tool-icon">⚡</div>
-          <div class="tool-info">
-            <h3>JS Editor</h3>
-            <div class="category-tag">Developer & Code</div>
+          <div class="card-footer">
+            <span class="privacy-badge">🔒 Zero Upload</span>
+            <a href="https://pdfedit.senaskat.com" target="_blank" rel="noopener" style="color: var(--text-subtle); font-size: 0.75rem; text-decoration: none;">pdfedit.senaskat.com ↗</a>
           </div>
-        </div>
-        <p>Beginner-friendly browser JavaScript playground to test snippets with real-time output console.</p>
-        <div class="card-footer">
-          <span class="privacy-badge">💻 Live Execution</span>
-          <span class="card-link-text">Learn More →</span>
-        </div>
-      </a>
+        </article>
 
-      <!-- Python Editor -->
-      <a href="python-editor.html" class="tool-card" data-category="developer" data-title="python editor pyodide client side script runner learning beginner playground">
-        <div class="card-header">
-          <div class="tool-icon">🐍</div>
-          <div class="tool-info">
-            <h3>Python Editor</h3>
-            <div class="category-tag">Developer & Code</div>
+        <!-- PDF Merge & Split -->
+        <article class="tool-card" data-category="pdf" data-title="pdf merge split combine divide pages organize">
+          <div class="card-header">
+            <div class="tool-icon">🔀</div>
+            <div class="tool-info">
+              <h3>PDF Merge & Split</h3>
+              <div class="category-tag">PDF & Document</div>
+            </div>
           </div>
-        </div>
-        <p>Execute Python scripts in your browser without installing Python or setting up servers.</p>
-        <div class="card-footer">
-          <span class="privacy-badge">🐍 Browser Python</span>
-          <span class="card-link-text">Learn More →</span>
-        </div>
-      </a>
-
-      <!-- POS Calculator -->
-      <a href="pos-calculator.html" class="tool-card" data-category="financial" data-title="pos calculator post office savings compounding interest mis td nsc maturity returns india">
-        <div class="card-header">
-          <div class="tool-icon">📊</div>
-          <div class="tool-info">
-            <h3>POS Calculator</h3>
-            <div class="category-tag">Financial</div>
+          <p>Combine multiple PDF files or extract specific page ranges effortlessly without installation.</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap;">
+            <a href="pdf-merge-split.html" class="card-link-text" style="font-size: 0.85rem;">Read Guide →</a>
+            <a href="https://pdfms.senaskat.com" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Launch Web App ↗</a>
           </div>
-        </div>
-        <p>Estimate Indian Post Office savings schemes, Time Deposits, and Monthly Income Scheme maturity returns.</p>
-        <div class="card-footer">
-          <span class="privacy-badge">📈 Accurate Interest</span>
-          <span class="card-link-text">Learn More →</span>
-        </div>
-      </a>
-
-      <!-- WPC Calculator -->
-      <a href="wpc-calculator.html" class="tool-card" data-category="financial" data-title="wpc calculator sip wealth loan emi compound interest mutual funds finance">
-        <div class="card-header">
-          <div class="tool-icon">💡</div>
-          <div class="tool-info">
-            <h3>WPC Calculator</h3>
-            <div class="category-tag">Financial</div>
+          <div class="card-footer">
+            <span class="privacy-badge">🔒 Fast & Secure</span>
+            <a href="https://pdfms.senaskat.com" target="_blank" rel="noopener" style="color: var(--text-subtle); font-size: 0.75rem; text-decoration: none;">pdfms.senaskat.com ↗</a>
           </div>
-        </div>
-        <p>SIP wealth growth projector and home/car loan EMI interest estimator with visual charts.</p>
-        <div class="card-footer">
-          <span class="privacy-badge">💰 Wealth Estimator</span>
-          <span class="card-link-text">Learn More →</span>
-        </div>
-      </a>
+        </article>
 
-      <!-- Blur Image -->
-      <a href="blur-image.html" class="tool-card" data-category="utilities" data-title="blur image face blur redact photo privacy editor ai detection photo">
-        <div class="card-header">
-          <div class="tool-icon">👁️</div>
-          <div class="tool-info">
-            <h3>Blur Image</h3>
-            <div class="category-tag">Smart Utilities</div>
+        <!-- PDF Extract -->
+        <article class="tool-card" data-category="pdf" data-title="pdf extract text images tables data converter">
+          <div class="card-header">
+            <div class="tool-icon">📤</div>
+            <div class="tool-info">
+              <h3>PDF Extract</h3>
+              <div class="category-tag">PDF & Document</div>
+            </div>
           </div>
-        </div>
-        <p>Blur faces and sensitive photo regions manually or automatically using client-side AI image processing.</p>
-        <div class="card-footer">
-          <span class="privacy-badge">🔒 Local Processing</span>
-          <span class="card-link-text">Learn More →</span>
-        </div>
-      </a>
-
-      <!-- Make QR Code -->
-      <a href="make-qr-code.html" class="tool-card" data-category="utilities" data-title="make qr code generator wifi sms text url download svg png custom color">
-        <div class="card-header">
-          <div class="tool-icon">📱</div>
-          <div class="tool-info">
-            <h3>Make QR Code</h3>
-            <div class="category-tag">Smart Utilities</div>
+          <p>Extract embedded images, text content, and tabular data from PDF documents instantly.</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap;">
+            <a href="pdf-extract.html" class="card-link-text" style="font-size: 0.85rem;">Read Guide →</a>
+            <a href="https://pdfextract.senaskat.com" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Launch Web App ↗</a>
           </div>
-        </div>
-        <p>Generate customizable QR codes for URLs, Wi-Fi passwords, contact cards, and text in high resolution.</p>
-        <div class="card-footer">
-          <span class="privacy-badge">📱 High Quality</span>
-          <span class="card-link-text">Learn More →</span>
-        </div>
-      </a>
+          <div class="card-footer">
+            <span class="privacy-badge">🔒 Browser Native</span>
+            <a href="https://pdfextract.senaskat.com" target="_blank" rel="noopener" style="color: var(--text-subtle); font-size: 0.75rem; text-decoration: none;">pdfextract.senaskat.com ↗</a>
+          </div>
+        </article>
 
-    </div>
+        <!-- LockPDF -->
+        <article class="tool-card" data-category="pdf" data-title="lock pdf password protect encrypt watermark unlock security">
+          <div class="card-header">
+            <div class="tool-icon">🔐</div>
+            <div class="tool-info">
+              <h3>LockPDF</h3>
+              <div class="category-tag">PDF & Document</div>
+            </div>
+          </div>
+          <p>Add AES password encryption, custom watermarks, or remove protections securely in-browser.</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap;">
+            <a href="lock-pdf.html" class="card-link-text" style="font-size: 0.85rem;">Read Guide →</a>
+            <a href="https://lockpdf.senaskat.com" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Launch Web App ↗</a>
+          </div>
+          <div class="card-footer">
+            <span class="privacy-badge">🔒 AES Encrypted</span>
+            <a href="https://lockpdf.senaskat.com" target="_blank" rel="noopener" style="color: var(--text-subtle); font-size: 0.75rem; text-decoration: none;">lockpdf.senaskat.com ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Developer Tools Section -->
+    <section id="dev-tools" style="margin-bottom: 3.5rem;">
+      <div style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
+        <h2 style="font-size: 1.75rem; font-weight: 800; color: var(--text-main);">💻 Developer Tools & Code Editors</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Interactive code playgrounds, formatters, and quiz tools for web developers and programmers.</p>
+      </div>
+
+      <div class="tools-grid">
+
+        <!-- ProQuiz -->
+        <article class="tool-card" data-category="developer" data-title="proquiz coding quiz programming java python javascript html css interactive">
+          <div class="card-header">
+            <div class="tool-icon">🎯</div>
+            <div class="tool-info">
+              <h3>ProQuiz</h3>
+              <div class="category-tag">Developer & Code</div>
+            </div>
+          </div>
+          <p>Test and sharpen your programming skills with interactive quizzes in JS, Python, SQL, and HTML.</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap;">
+            <a href="proquiz.html" class="card-link-text" style="font-size: 0.85rem;">Read Guide →</a>
+            <a href="https://spt.senaskat.com" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Launch Web App ↗</a>
+          </div>
+          <div class="card-footer">
+            <span class="privacy-badge">🎓 Free Practice</span>
+            <a href="https://spt.senaskat.com" target="_blank" rel="noopener" style="color: var(--text-subtle); font-size: 0.75rem; text-decoration: none;">spt.senaskat.com ↗</a>
+          </div>
+        </article>
+
+        <!-- JSON Viewer -->
+        <article class="tool-card" data-category="developer" data-title="json viewer formatter validator tree view beautify debug">
+          <div class="card-header">
+            <div class="tool-icon">🔍</div>
+            <div class="tool-info">
+              <h3>JSON Viewer</h3>
+              <div class="category-tag">Developer & Code</div>
+            </div>
+          </div>
+          <p>Format, validate, beautify, and inspect complex JSON data trees with syntax highlighting.</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap;">
+            <a href="json-viewer.html" class="card-link-text" style="font-size: 0.85rem;">Read Guide →</a>
+            <a href="https://jsonview.senaskat.com" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Launch Web App ↗</a>
+          </div>
+          <div class="card-footer">
+            <span class="privacy-badge">⚡ Instant Validation</span>
+            <a href="https://jsonview.senaskat.com" target="_blank" rel="noopener" style="color: var(--text-subtle); font-size: 0.75rem; text-decoration: none;">jsonview.senaskat.com ↗</a>
+          </div>
+        </article>
+
+        <!-- JS Editor -->
+        <article class="tool-card" data-category="developer" data-title="js editor javascript playground run code live preview script console">
+          <div class="card-header">
+            <div class="tool-icon">⚡</div>
+            <div class="tool-info">
+              <h3>JS Editor</h3>
+              <div class="category-tag">Developer & Code</div>
+            </div>
+          </div>
+          <p>Beginner-friendly browser JavaScript playground to test snippets with real-time output console.</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap;">
+            <a href="js-editor.html" class="card-link-text" style="font-size: 0.85rem;">Read Guide →</a>
+            <a href="https://jseditor.senaskat.com" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Launch Web App ↗</a>
+          </div>
+          <div class="card-footer">
+            <span class="privacy-badge">💻 Live Execution</span>
+            <a href="https://jseditor.senaskat.com" target="_blank" rel="noopener" style="color: var(--text-subtle); font-size: 0.75rem; text-decoration: none;">jseditor.senaskat.com ↗</a>
+          </div>
+        </article>
+
+        <!-- Python Editor -->
+        <article class="tool-card" data-category="developer" data-title="python editor pyodide client side script runner learning beginner playground">
+          <div class="card-header">
+            <div class="tool-icon">🐍</div>
+            <div class="tool-info">
+              <h3>Python Editor</h3>
+              <div class="category-tag">Developer & Code</div>
+            </div>
+          </div>
+          <p>Execute Python scripts in your browser without installing Python or setting up servers.</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap;">
+            <a href="python-editor.html" class="card-link-text" style="font-size: 0.85rem;">Read Guide →</a>
+            <a href="https://pyeditor.senaskat.com" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Launch Web App ↗</a>
+          </div>
+          <div class="card-footer">
+            <span class="privacy-badge">🐍 Browser Python</span>
+            <a href="https://pyeditor.senaskat.com" target="_blank" rel="noopener" style="color: var(--text-subtle); font-size: 0.75rem; text-decoration: none;">pyeditor.senaskat.com ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Financial Calculators Section -->
+    <section id="finance-tools" style="margin-bottom: 3.5rem;">
+      <div style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
+        <h2 style="font-size: 1.75rem; font-weight: 800; color: var(--text-main);">📈 Financial Calculators & Estimators</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Accurate interest compounding, savings maturity calculators, and loan EMI estimators.</p>
+      </div>
+
+      <div class="tools-grid">
+
+        <!-- POS Calculator -->
+        <article class="tool-card" data-category="financial" data-title="pos calculator post office savings compounding interest mis td nsc maturity returns india">
+          <div class="card-header">
+            <div class="tool-icon">📊</div>
+            <div class="tool-info">
+              <h3>POS Calculator</h3>
+              <div class="category-tag">Financial</div>
+            </div>
+          </div>
+          <p>Estimate Indian Post Office savings schemes, Time Deposits, and Monthly Income Scheme maturity returns.</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap;">
+            <a href="pos-calculator.html" class="card-link-text" style="font-size: 0.85rem;">Read Guide →</a>
+            <a href="https://pos.senaskat.com" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Launch Web App ↗</a>
+          </div>
+          <div class="card-footer">
+            <span class="privacy-badge">📈 Accurate Interest</span>
+            <a href="https://pos.senaskat.com" target="_blank" rel="noopener" style="color: var(--text-subtle); font-size: 0.75rem; text-decoration: none;">pos.senaskat.com ↗</a>
+          </div>
+        </article>
+
+        <!-- WPC Calculator -->
+        <article class="tool-card" data-category="financial" data-title="wpc calculator sip wealth loan emi compound interest mutual funds finance">
+          <div class="card-header">
+            <div class="tool-icon">💡</div>
+            <div class="tool-info">
+              <h3>WPC Calculator</h3>
+              <div class="category-tag">Financial</div>
+            </div>
+          </div>
+          <p>SIP wealth growth projector and home/car loan EMI interest estimator with visual charts.</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap;">
+            <a href="wpc-calculator.html" class="card-link-text" style="font-size: 0.85rem;">Read Guide →</a>
+            <a href="https://wpc.senaskat.com" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Launch Web App ↗</a>
+          </div>
+          <div class="card-footer">
+            <span class="privacy-badge">💰 Wealth Estimator</span>
+            <a href="https://wpc.senaskat.com" target="_blank" rel="noopener" style="color: var(--text-subtle); font-size: 0.75rem; text-decoration: none;">wpc.senaskat.com ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Smart Utilities Section -->
+    <section id="utility-tools" style="margin-bottom: 3.5rem;">
+      <div style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
+        <h2 style="font-size: 1.75rem; font-weight: 800; color: var(--text-main);">🛠️ Smart Utilities & Generators</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Client-side AI image face blurring and custom QR code creation.</p>
+      </div>
+
+      <div class="tools-grid">
+
+        <!-- Blur Image -->
+        <article class="tool-card" data-category="utilities" data-title="blur image face blur redact photo privacy editor ai detection photo">
+          <div class="card-header">
+            <div class="tool-icon">👁️</div>
+            <div class="tool-info">
+              <h3>Blur Image</h3>
+              <div class="category-tag">Smart Utilities</div>
+            </div>
+          </div>
+          <p>Blur faces and sensitive photo regions manually or automatically using client-side AI image processing.</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap;">
+            <a href="blur-image.html" class="card-link-text" style="font-size: 0.85rem;">Read Guide →</a>
+            <a href="https://blurimage.senaskat.com" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Launch Web App ↗</a>
+          </div>
+          <div class="card-footer">
+            <span class="privacy-badge">🔒 Local Processing</span>
+            <a href="https://blurimage.senaskat.com" target="_blank" rel="noopener" style="color: var(--text-subtle); font-size: 0.75rem; text-decoration: none;">blurimage.senaskat.com ↗</a>
+          </div>
+        </article>
+
+        <!-- Make QR Code -->
+        <article class="tool-card" data-category="utilities" data-title="make qr code generator wifi sms text url download svg png custom color">
+          <div class="card-header">
+            <div class="tool-icon">📱</div>
+            <div class="tool-info">
+              <h3>Make QR Code</h3>
+              <div class="category-tag">Smart Utilities</div>
+            </div>
+          </div>
+          <p>Generate customizable QR codes for URLs, Wi-Fi passwords, contact cards, and text in high resolution.</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem; flex-wrap: wrap;">
+            <a href="make-qr-code.html" class="card-link-text" style="font-size: 0.85rem;">Read Guide →</a>
+            <a href="https://makeqr.senaskat.com" target="_blank" rel="noopener" class="btn-primary" style="padding: 0.35rem 0.8rem; font-size: 0.8rem;">Launch Web App ↗</a>
+          </div>
+          <div class="card-footer">
+            <span class="privacy-badge">📱 High Quality</span>
+            <a href="https://makeqr.senaskat.com" target="_blank" rel="noopener" style="color: var(--text-subtle); font-size: 0.75rem; text-decoration: none;">makeqr.senaskat.com ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Why Choose Client-Side Tools Content Section -->
+    <section class="content-block" style="margin-bottom: 3.5rem;">
+      <h2>🌟 Why Choose 100% Client-Side Browser Tools?</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1rem;">
+        Traditional online utilities force you to upload your sensitive PDFs, documents, and code to remote cloud servers. This exposes confidential personal records, financial data, and proprietary code to server logs and data breaches.
+      </p>
+      <p style="color: var(--text-muted);">
+        Our suite of web utilities runs <strong>100% inside your local browser memory</strong> using HTML5 Canvas, WebAssembly, and modern JavaScript standards. Your files never touch any external server, guaranteeing maximum privacy and instant processing speeds.
+      </p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-block" id="faq-section" style="margin-bottom: 3.5rem;">
+      <h2>❓ Frequently Asked Questions (FAQ)</h2>
+      <div class="faq-list">
+        <article class="faq-item">
+          <h3>Are these web utilities completely free to use?</h3>
+          <p>Yes, all 13 tools are 100% free with no registration, subscription fees, or usage limits.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Do these tools upload my files to any server?</h3>
+          <p>No. All calculations, document editing, PDF redaction, and code compilation happen locally inside your browser.</p>
+        </article>
+        <article class="faq-item">
+          <h3>How do I access individual web applications directly?</h3>
+          <p>You can access each app directly via its dedicated subdomain (e.g., <a href="https://pdfredact.senaskat.com" target="_blank" rel="noopener">pdfredact.senaskat.com</a>, <a href="https://jsonview.senaskat.com" target="_blank" rel="noopener">jsonview.senaskat.com</a>, <a href="https://pos.senaskat.com" target="_blank" rel="noopener">pos.senaskat.com</a>).</p>
+        </article>
+      </div>
+    </section>
+
   </main>
 
-  <!-- Footer -->
+  <!-- Footer Navigation & Links -->
   <footer>
     <div class="container footer-content">
       <div class="footer-brand">
@@ -299,43 +438,45 @@
           <span class="logo-badge">Senaskat</span>
           <span>Useful Free Site</span>
         </a>
-        <p>Free, privacy-focused browser utilities designed for maximum speed, zero server uploads, and simplicity.</p>
+        <p>Free, privacy-focused browser utilities designed for maximum speed, zero server uploads, and complete security.</p>
+        <p style="margin-top: 0.75rem;"><a href="sitemap.xml" style="color: var(--primary); text-decoration: none;">XML Sitemap ↗</a></p>
       </div>
 
       <div class="footer-col">
         <h4>🔒 PDF Tools</h4>
         <ul class="footer-links">
-          <li><a href="pdf-redact.html">PDF Redact</a></li>
-          <li><a href="pdf-edit.html">PDF Edit</a></li>
-          <li><a href="pdf-merge-split.html">PDF Merge & Split</a></li>
-          <li><a href="pdf-extract.html">PDF Extract</a></li>
-          <li><a href="lock-pdf.html">LockPDF</a></li>
+          <li><a href="pdf-redact.html">PDF Redact Guide</a> (<a href="https://pdfredact.senaskat.com" target="_blank" rel="noopener">App ↗</a>)</li>
+          <li><a href="pdf-edit.html">PDF Edit Guide</a> (<a href="https://pdfedit.senaskat.com" target="_blank" rel="noopener">App ↗</a>)</li>
+          <li><a href="pdf-merge-split.html">PDF Merge Guide</a> (<a href="https://pdfms.senaskat.com" target="_blank" rel="noopener">App ↗</a>)</li>
+          <li><a href="pdf-extract.html">PDF Extract Guide</a> (<a href="https://pdfextract.senaskat.com" target="_blank" rel="noopener">App ↗</a>)</li>
+          <li><a href="lock-pdf.html">LockPDF Guide</a> (<a href="https://lockpdf.senaskat.com" target="_blank" rel="noopener">App ↗</a>)</li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4>💻 Developer Tools</h4>
         <ul class="footer-links">
-          <li><a href="proquiz.html">ProQuiz</a></li>
-          <li><a href="json-viewer.html">JSON Viewer</a></li>
-          <li><a href="js-editor.html">JS Editor</a></li>
-          <li><a href="python-editor.html">Python Editor</a></li>
+          <li><a href="proquiz.html">ProQuiz Guide</a> (<a href="https://spt.senaskat.com" target="_blank" rel="noopener">App ↗</a>)</li>
+          <li><a href="json-viewer.html">JSON Viewer Guide</a> (<a href="https://jsonview.senaskat.com" target="_blank" rel="noopener">App ↗</a>)</li>
+          <li><a href="js-editor.html">JS Editor Guide</a> (<a href="https://jseditor.senaskat.com" target="_blank" rel="noopener">App ↗</a>)</li>
+          <li><a href="python-editor.html">Python Editor Guide</a> (<a href="https://pyeditor.senaskat.com" target="_blank" rel="noopener">App ↗</a>)</li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h4>📈 Financial & Utilities</h4>
         <ul class="footer-links">
-          <li><a href="pos-calculator.html">POS Calculator</a></li>
-          <li><a href="wpc-calculator.html">WPC Calculator</a></li>
-          <li><a href="blur-image.html">Blur Image</a></li>
-          <li><a href="make-qr-code.html">Make QR Code</a></li>
+          <li><a href="pos-calculator.html">POS Calculator Guide</a> (<a href="https://pos.senaskat.com" target="_blank" rel="noopener">App ↗</a>)</li>
+          <li><a href="wpc-calculator.html">WPC Calculator Guide</a> (<a href="https://wpc.senaskat.com" target="_blank" rel="noopener">App ↗</a>)</li>
+          <li><a href="blur-image.html">Blur Image Guide</a> (<a href="https://blurimage.senaskat.com" target="_blank" rel="noopener">App ↗</a>)</li>
+          <li><a href="make-qr-code.html">Make QR Code Guide</a> (<a href="https://makeqr.senaskat.com" target="_blank" rel="noopener">App ↗</a>)</li>
+          <li><a href="https://senaskat.com" target="_blank" rel="noopener">Senaskat Main Site ↗</a></li>
         </ul>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; 2026 Senaskat Web Utilities. All tools run 100% locally in your browser.</p>
+      <p>&copy; 2026 Senaskat Web Utilities. All tools run 100% locally in your browser. Hosted on <a href="https://github.com/Murugan-mr2s/some-useful-free-site" target="_blank" rel="noopener" style="color: var(--text-muted);">GitHub Pages</a>.</p>
     </div>
   </footer>
 
